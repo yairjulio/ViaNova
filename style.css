@@ -112,6 +112,7 @@ li{
 .servicios__section{
     background-image: url(fotos/Servicios.jpg);
     background-size: percentage 100% 100%;
+    background-image: linear-gradient(to right, rgb(64, 255, 239), #0064d6);
 }
 
 .clientes__section{
