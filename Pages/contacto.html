@@ -4,60 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Contacto</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <a href="index.html"><img src="../Fotos/LOGOMOBILE.jpg" alt="logo" height="50" width="175"></a>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="header">
+                <nav class="BarraNavegacion navbar navbar-expand-md navbar-light justify-content-center">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="../index.html"><img src="../Fotos/Logo.png" alt="logo" height="50" width="200"></a>
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li> 
+                        </ul>
+                    </div> 
+                </nav>
+            </header>
+        </div>
+        <div class="row">
+            <section class="contacto__section col-xs-12 col-md-6 col-lg-6">
+                <h1>Formulario de Contacto</h1>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="nombre_apellido">Nombre y apellido:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre y apellido" id="nombre_apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Ingrese su email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono:</label>
+                        <input type="number" class="form-control" placeholder="Ingrese su telefono" id="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="horario">Horario de contacto:</label>
+                        <select name="horario" class="custom-select">
+                            <option selected>Seleccione horario de contacto</option>
+                            <option value="volvo">09:00-13:00hs</option>
+                            <option value="fiat">13:00-17:00hs</option>
+                            <option value="audi">17:00-21:00hs</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios">Ingrese sus comentarios</label>
+                        <textarea class="form-control" id="comentarios" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </section>
+            <article class="contacto__article col-xs-12 col-md-6 col-lg-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est quam eveniet deleniti nesciunt fugit repudiandae quas dolore cupiditate minima a, consequuntur maiores, ex esse, quasi illo corrupti suscipit. Praesentium?</p>
+            </article>
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./clientes.html">Clientes</a></li>
-                    <li><a href="">Contacto</a></li>
+        <footer>
+            <nav class="navbar navbar-expand-sm bg-light">
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="TW fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="FB fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="WP fab fa-whatsapp"></i></a>
+                    </li>
                 </ul>  
             </nav>
-        </header>
-        <section class="contacto__section">
-            <fieldset>
-                <legend>Formulario de Contacto</legend>
-                
-                <form>
-                    <label for="nombre_apellido">Nombre:</label>
-                    <input type="text" name="nombre_apellido" id="nomnbre_apellido"><br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email"><br>
-                    <label for="telefono">Telefono:</label>
-                    <input type="number" name="telefono" id="telefono"><br>
-                    <label for="horario">Horario preferido de contacto:</label>
-                    <select name="horario" id="horario">
-                        <option value="M">09:00-13:00hs</option>
-                        <option value="T">13:00-17:00hs</option>
-                        <option value="N">17:00-21:00hs</option>
-                    </select><br>
-                    <label for="comentarios">Comentarios:</label><br>
-                    <textarea name="comentarios" id="" cols="30" rows="5" placeholder="Escribe tu comentario"></textarea><br>
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
-        
-                </form>
-            </fieldset>
-        </section>
-        <article class="contacto__article">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi est quam eveniet deleniti nesciunt fugit repudiandae quas dolore cupiditate minima a, consequuntur maiores, ex esse, quasi illo corrupti suscipit. Praesentium?</p>
-        </article>
-        <footer>
-            <ul class="footer">
-                <li class="FB">Facebook</li>
-                <li class="TW">Twitter</li>
-                <li class="WP">WhatsApp</li>
-            </ul>
         </footer>
     </div>
+    <script src="https://kit.fontawesome.com/aaadeae421.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
