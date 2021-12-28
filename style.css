@@ -9,6 +9,24 @@ header, footer, article, section{
     width: 100%;
 }
 
+.ItemNavbar:hover{
+    background-color: rgb(126, 119, 230);
+}
+
+.galeria{
+    margin: 100px;
+}
+
+.Texto_Clientes{
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: midnightblue;
+}
+
+.thumbnail:hover{
+    transform: scale(1.2,1.2);
+}
+
 /* header{
     grid-area: header;
     display: flex;
@@ -73,6 +91,10 @@ li:hover{
     text-decoration: none;
 } */
 
+.servicios__section:hover{
+    transform: rotate(360deg);
+}
+
 .BarraNavegacion{
     background-color: #9dc1df;
 }
@@ -82,12 +104,24 @@ li:hover{
     color: mediumblue;
 }
 
+.FB:hover{
+    transform: scale(1.2,1.2);
+}
+
 .TW{
     font-size: 40px;
     color: dodgerblue;
 }
 
+.TW:hover{
+    transform: scale(1.2,1.2);
+}
+
 .WP{
     font-size: 40px;
     color: limegreen;
+}
+
+.WP:hover{
+    transform: scale(1.2,1.2);
 }
