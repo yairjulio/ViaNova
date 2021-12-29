@@ -5,12 +5,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+$ColorNavbar: #9dc1df;
+$ColorTexto:  midnightblue;
+$ColorHoverNavbar: rgb(126, 119, 230);
+
+
 header, article, section{
     width: 100%;
 }
 
 .ItemNavbar:hover{
-    background-color: rgb(126, 119, 230);
+    background-color: $ColorHoverNavbar
 }
 
 .galeria{
@@ -20,7 +25,7 @@ header, article, section{
 .Texto_Clientes{
     padding: 20px;
     font-family: 'Open Sans', sans-serif;
-    color: midnightblue;
+    color:$ColorTexto;
 }
 
 .thumbnail:hover{
@@ -32,32 +37,7 @@ header, article, section{
 }
 
 .BarraNavegacion{
-    background-color: #9dc1df;
+    background-color: $ColorNavbar;
 }
 
-.FB{
-    font-size: 40px;
-    color: mediumblue;
-}
-
-.FB:hover{
-    transform: scale(1.2,1.2);
-}
-
-.TW{
-    font-size: 40px;
-    color: dodgerblue;
-}
-
-.TW:hover{
-    transform: scale(1.2,1.2);
-}
-
-.WP{
-    font-size: 40px;
-    color: limegreen;
-}
-
-.WP:hover{
-    transform: scale(1.2,1.2);
-}
+@import "_footer.scss";

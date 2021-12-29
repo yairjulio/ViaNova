@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header, article, section {
+  width: 100%;
+}
+
+.ItemNavbar:hover {
+  background-color: #7e77e6;
+}
+
+.galeria {
+  margin: 100px;
+}
+
+.Texto_Clientes {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: midnightblue;
+}
+
+.thumbnail:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.servicios__section:hover {
+  transform: rotate(360deg);
+}
+
+.BarraNavegacion {
+  background-color: #9dc1df;
+}
+
+footer {
+  width: 100%;
+}
+
+.FB {
+  font-size: 40px;
+  color: mediumblue;
+}
+
+.FB:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.TW {
+  font-size: 40px;
+  color: dodgerblue;
+}
+
+.TW:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.WP {
+  font-size: 40px;
+  color: limegreen;
+}
+
+.WP:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/*# sourceMappingURL=style.css.map */
