@@ -6,9 +6,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 $ColorNavbar: #9dc1df;
-$ColorTexto:  midnightblue;
 $ColorHoverNavbar: rgb(126, 119, 230);
 
+$TextoClientes:(
+    pad: 20px,
+    ColorTexto:  midnightblue,
+);
+
+@mixin hPadding($padding-left,$padding-right){
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
 
 header, article, section{
     width: 100%;
@@ -22,13 +30,26 @@ header, article, section{
     margin: 100px;
 }
 
-.Texto_Clientes{
+h1, h2, p {
     padding: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color:$ColorTexto;
 }
 
-.thumbnail:hover{
+#destinos{
+    @include hPadding(20px,20px)
+}
+
+.Texto_Clientes{
+    font-family: 'Open Sans', sans-serif;    
+    padding: map-get($TextoClientes, pad);
+    color: map-get($TextoClientes, ColorTexto);
+}
+
+.Texto_Index{
+    @extend .Texto_Clientes;
+    size: 25px;    
+}
+
+.LogoClientes:hover{
     transform: scale(1.2,1.2);
 }
 

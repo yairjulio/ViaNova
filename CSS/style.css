@@ -16,13 +16,26 @@ header, article, section {
   margin: 100px;
 }
 
-.Texto_Clientes {
+h1, h2, p {
   padding: 20px;
+}
+
+#destinos {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Texto_Clientes, .Texto_Index {
   font-family: "Open Sans", sans-serif;
+  padding: 20px;
   color: midnightblue;
 }
 
-.thumbnail:hover {
+.Texto_Index {
+  size: 25px;
+}
+
+.LogoClientes:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -39,29 +52,22 @@ footer {
 }
 
 .FB {
-  font-size: 40px;
   color: mediumblue;
 }
 
-.FB:hover {
-  transform: scale(1.2, 1.2);
-}
-
 .TW {
-  font-size: 40px;
   color: dodgerblue;
 }
 
-.TW:hover {
-  transform: scale(1.2, 1.2);
-}
-
 .WP {
-  font-size: 40px;
   color: limegreen;
 }
 
-.WP:hover {
+.FB, .TW, .WP {
+  font-size: 40px;
+}
+
+.FB:hover, .TW:hover, .WP:hover {
   transform: scale(1.2, 1.2);
 }
 

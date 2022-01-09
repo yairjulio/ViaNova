@@ -2,29 +2,23 @@ footer{
     width: 100%;
 }
 
-.FB{
+
+$redes:(
+    FB: mediumblue,
+    TW: dodgerblue,
+    WP: limegreen,
+);
+
+@each $red, $color in $redes{
+    .#{$red}{
+        color: $color;
+    }
+}
+
+.FB, .TW, .WP{
     font-size: 40px;
-    color: mediumblue;
 }
 
-.FB:hover{
-    transform: scale(1.2,1.2);
-}
-
-.TW{
-    font-size: 40px;
-    color: dodgerblue;
-}
-
-.TW:hover{
-    transform: scale(1.2,1.2);
-}
-
-.WP{
-    font-size: 40px;
-    color: limegreen;
-}
-
-.WP:hover{
+.FB:hover, .TW:hover, .WP:hover{
     transform: scale(1.2,1.2);
 }
