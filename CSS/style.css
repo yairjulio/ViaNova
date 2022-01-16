@@ -25,13 +25,13 @@ h1, h2, p {
   padding-right: 20px;
 }
 
-.Texto_Clientes, .Texto_Index {
+.Texto_Clientes, .Texto_Index, .Texto_Contacto, .Texto_Nosotros {
   font-family: "Open Sans", sans-serif;
   padding: 20px;
   color: midnightblue;
 }
 
-.Texto_Index {
+.Texto_Index, .Texto_Contacto, .Texto_Nosotros {
   size: 25px;
 }
 
@@ -45,6 +45,36 @@ h1, h2, p {
 
 .BarraNavegacion {
   background-color: #9dc1df;
+}
+
+.FooterNavegacion {
+  background-color: #b4d2eb;
+}
+
+.Lista_Nosotros {
+  margin: 20px;
+}
+
+.Item_Nosotros, .form-control, .custom-select {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-control, .custom-select {
+  padding: 0px;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.Texto_Contacto {
+  color: white;
+}
+
+.contacto__section {
+  background: linear-gradient(90deg, #1c71b4 0%, #1e9f9b 100%);
 }
 
 footer {

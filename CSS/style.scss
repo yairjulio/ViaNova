@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 $ColorNavbar: #9dc1df;
+$ColorFooter: #b4d2eb;
 $ColorHoverNavbar: rgb(126, 119, 230);
 
 $TextoClientes:(
@@ -49,6 +50,10 @@ h1, h2, p {
     size: 25px;    
 }
 
+.Texto_Nosotros{
+    @extend .Texto_Index;
+}
+
 .LogoClientes:hover{
     transform: scale(1.2,1.2);
 }
@@ -60,5 +65,38 @@ h1, h2, p {
 .BarraNavegacion{
     background-color: $ColorNavbar;
 }
+
+.FooterNavegacion{
+    background-color: $ColorFooter;
+}
+
+.Lista_Nosotros{
+    margin: 20px;
+}
+
+.Item_Nosotros{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.form-control, .custom-select{
+    @extend .Item_Nosotros;
+    padding: 0px;
+}
+
+label{
+    font-family: 'Open Sans', sans-serif;
+    color: white; 
+}
+
+.Texto_Contacto{
+    @extend .Texto_Index;
+    color: white;
+}
+
+.contacto__section{
+    background: linear-gradient(90deg,#1c71b4 0%,#1e9f9b 100%);
+}
+
 
 @import "_footer.scss";
