@@ -7,7 +7,7 @@
 
 $ColorNavbar: #9dc1df;
 $ColorFooter: #b4d2eb;
-$ColorHoverNavbar: rgb(126, 119, 230);
+$ColorHoverNavbar: #0854a0;
 
 $TextoClientes:(
     pad: 20px,
@@ -25,6 +25,10 @@ header, article, section{
 
 .ItemNavbar:hover{
     background-color: $ColorHoverNavbar
+}
+
+.nav-link:hover{
+    color: white;
 }
 
 .galeria{
@@ -84,7 +88,7 @@ h1, h2, p {
     padding: 0px;
 }
 
-label{
+label, h5{
     font-family: 'Open Sans', sans-serif;
     color: white; 
 }
@@ -97,6 +101,7 @@ label{
 .contacto__section{
     background: linear-gradient(90deg,#1c71b4 0%,#1e9f9b 100%);
 }
+
 
 
 @import "_footer.scss";

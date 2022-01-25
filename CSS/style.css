@@ -9,7 +9,11 @@ header, article, section {
 }
 
 .ItemNavbar:hover {
-  background-color: #7e77e6;
+  background-color: #0854a0;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 .galeria {
@@ -64,7 +68,7 @@ h1, h2, p {
   padding: 0px;
 }
 
-label {
+label, h5 {
   font-family: "Open Sans", sans-serif;
   color: white;
 }
