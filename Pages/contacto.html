@@ -13,12 +13,14 @@
 </head>
 <body>
     <!--Inicio Barra Navegacion-->
-    <nav class="BarraNavegacion navbar navbar-expand-md sticky-top navbar-light justify-content-center">
+    <nav class="BarraNavegacion navbar navbar-expand-md sticky-top navbar-right">
         <!-- Brand -->
         <a class="navbar-brand" href="../index.html"><img src="../Fotos/Logo.png" alt="logo" height="50" width="200"></a>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">   
+                <i class="fas fa-bars"></i>
+            </span>
         </button>
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -37,7 +39,7 @@
             <!--Inicio formulario de contacto-->
             <section class="col-xs-12 col-md-3 col-lg-3"></section>
             <section class="contacto__section col-xs-12 col-md-6 col-lg-6">
-                <h1 class="Texto_Contacto">Contactate con uno de nuestros asesores de viaje</h1>
+                <h1 class="titulo text-center">Contactate con uno de nuestros asesores de viaje</h1>
                 <form action="/action_page.php">
                     <div class="form-group">
                         <label for="nombre_apellido">Nombre y apellido:</label>
@@ -70,22 +72,32 @@
             <!--Fin formulario de contacto-->
         </div>
     </div>
-        <footer>
-            <nav class="FooterNavegacion navbar navbar-expand-sm">
-                <!-- Links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="TW fab fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="FB fab fa-facebook"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="WP fab fa-whatsapp"></i></a>
-                    </li>
-                </ul>  
-            </nav>
-        </footer>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <h4 class="texto__footer">Seguinos en nuestras redes:</h4>
+                    <a href="mailto:yairjulio@gmail.com">
+                        <img src="../Fotos/Icons/gmail.png" class="footer__icons" alt="">
+                    </a>
+                    <a href="https://www.facebook.com">
+                        <img src="../Fotos/Icons/facebook.png" class="footer__icons" alt="">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="../Fotos/Icons/twitter.png" class="footer__icons" alt="">
+                    </a>
+                    <a href="https://www.whatsapp.com">
+                        <img src="../Fotos/Icons/whatsapp.png" class="footer__icons" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <h4 class="texto__footer">ViaNova Agencia de Viajes</h4>
+                    <h6 class="texto__footer--small">Av. Santa Fe 911, CABA, Argentina</h6>
+                    <h6 class="texto__footer--small">4314-4444</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/aaadeae421.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

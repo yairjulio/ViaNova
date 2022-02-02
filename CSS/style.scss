@@ -1,81 +1,135 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing:border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+/* Colores */
+
 $ColorNavbar: #9dc1df;
 $ColorFooter: #b4d2eb;
 $ColorHoverNavbar: #0854a0;
+$ColorTextoLight: white;
+$ColorTexto: midnightblue;
+$ColorFondo: rgb(223, 242, 255);
 
-$TextoClientes:(
+/* Propiedades de texto */
+
+$Texto:(
     pad: 20px,
-    ColorTexto:  midnightblue,
+    tamano: 25px,
 );
 
-@mixin hPadding($padding-left,$padding-right){
-    padding-left: $padding-left;
-    padding-right: $padding-right;
+body{
+    background-color: $ColorFondo;
 }
 
 header, article, section{
     width: 100%;
 }
 
+/* NavBar */
+
 .ItemNavbar:hover{
     background-color: $ColorHoverNavbar
 }
 
-.nav-link:hover{
-    color: white;
+.BarraNavegacion{
+    background-color: $ColorNavbar
 }
+
+.nav-link{
+    color: $ColorHoverNavbar
+}
+
+.nav-link:hover{
+    color: $ColorTextoLight
+}
+
+/* Manejo de Imagenes e Iconos */
+
+.ImagenNumeros, .LogoClientes, .ImagenServicios{
+    transition: all 400ms ease;
+}
+
+.ImagenNumeros:hover, .ImagenServicios:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-4%);
+}
+
+.LogoClientes:hover{
+    transform: scale(1.1,1.1);
+}
+
+.icono{
+    padding: 10px;
+}
+
+.caption{
+    overflow: hidden;
+}
+
+.fas{
+    font-size:28px;
+    color: $ColorHoverNavbar
+}
+
+/* Manejo de Textos */
+
+.titulo{
+    font-family: 'Open Sans', sans-serif;    
+    padding: map-get($Texto, pad);
+    size: map-get($Texto, tamano);
+    color: $ColorTexto
+}
+
+.texto__footer, h4{
+    font-family: 'Open Sans', sans-serif;
+    color: $ColorTexto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.texto__footer--small{
+    @extend .texto__footer;
+    font-size: 12px;
+}
+
+.texto__index{
+    @extend .texto__footer;
+    font-weight: normal;
+    padding-bottom: 25px;
+}
+
+label, h5{
+    font-family: 'Open Sans', sans-serif;
+    color: $ColorTextoLight; 
+}
+
+h4{
+    padding-top: 20px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;    
+    padding: map-get($Texto, pad);
+    size: 20px;
+    color: $ColorTexto
+}
+
+/* Seccion Index */
 
 .galeria{
     margin: 100px;
 }
 
-h1, h2, p {
-    padding: 20px;
-}
+/* Seccion Nosotros */
 
-#destinos{
-    @include hPadding(20px,20px)
-}
-
-.Texto_Clientes{
-    font-family: 'Open Sans', sans-serif;    
-    padding: map-get($TextoClientes, pad);
-    color: map-get($TextoClientes, ColorTexto);
-}
-
-.Texto_Index{
-    @extend .Texto_Clientes;
-    size: 25px;    
-}
-
-.Texto_Nosotros{
-    @extend .Texto_Index;
-}
-
-.LogoClientes:hover{
-    transform: scale(1.2,1.2);
-}
-
-.servicios__section:hover{
-    transform: rotate(360deg);
-}
-
-.BarraNavegacion{
-    background-color: $ColorNavbar;
-}
-
-.FooterNavegacion{
-    background-color: $ColorFooter;
-}
-
-.Lista_Nosotros{
+.Lista_Nosotros, .Lista_Servicios{
     margin: 20px;
+    color: midnightblue;
 }
 
 .Item_Nosotros{
@@ -83,25 +137,41 @@ h1, h2, p {
     font-family: 'Open Sans', sans-serif; 
 }
 
+/* Seccion Servicios */
+
+.Lista_Servicios {
+    border: 1px solid ;
+    list-style-type: none;
+}
+
+.NuestroServicio{
+    background-image: url(/Fotos/Serv_1.jpg);
+    background-size: cover;
+}
+
+/* Seccion Contactos */
+
 .form-control, .custom-select{
     @extend .Item_Nosotros;
     padding: 0px;
-}
-
-label, h5{
-    font-family: 'Open Sans', sans-serif;
-    color: white; 
-}
-
-.Texto_Contacto{
-    @extend .Texto_Index;
-    color: white;
 }
 
 .contacto__section{
     background: linear-gradient(90deg,#1c71b4 0%,#1e9f9b 100%);
 }
 
+/* Seccion Footer */
 
+footer{
+    background-color: $ColorFooter;
+    margin: 0 !important;
+}
 
-@import "_footer.scss";
+.footer__icons{
+    width: 30px;
+    padding: 5px;
+}
+
+body{
+    width: 100%;
+}

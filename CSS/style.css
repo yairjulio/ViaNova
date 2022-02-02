@@ -2,70 +2,85 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+/* Colores */
+/* Propiedades de texto */
+body {
+  background-color: #dff2ff;
 }
 
 header, article, section {
   width: 100%;
 }
 
+/* NavBar */
 .ItemNavbar:hover {
   background-color: #0854a0;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-.galeria {
-  margin: 100px;
-}
-
-h1, h2, p {
-  padding: 20px;
-}
-
-#destinos {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.Texto_Clientes, .Texto_Index, .Texto_Contacto, .Texto_Nosotros {
-  font-family: "Open Sans", sans-serif;
-  padding: 20px;
-  color: midnightblue;
-}
-
-.Texto_Index, .Texto_Contacto, .Texto_Nosotros {
-  size: 25px;
-}
-
-.LogoClientes:hover {
-  transform: scale(1.2, 1.2);
-}
-
-.servicios__section:hover {
-  transform: rotate(360deg);
 }
 
 .BarraNavegacion {
   background-color: #9dc1df;
 }
 
-.FooterNavegacion {
-  background-color: #b4d2eb;
+.nav-link {
+  color: #0854a0;
 }
 
-.Lista_Nosotros {
-  margin: 20px;
+.nav-link:hover {
+  color: white;
 }
 
-.Item_Nosotros, .form-control, .custom-select {
+/* Manejo de Imagenes e Iconos */
+.ImagenNumeros, .LogoClientes, .ImagenServicios {
+  transition: all 400ms ease;
+}
+
+.ImagenNumeros:hover, .ImagenServicios:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4%);
+}
+
+.LogoClientes:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.icono {
   padding: 10px;
-  font-family: "Open Sans", sans-serif;
 }
 
-.form-control, .custom-select {
-  padding: 0px;
+.caption {
+  overflow: hidden;
+}
+
+.fas {
+  font-size: 28px;
+  color: #0854a0;
+}
+
+/* Manejo de Textos */
+.titulo {
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+  size: 25px;
+  color: midnightblue;
+}
+
+.texto__footer, .texto__index, .texto__footer--small, h4 {
+  font-family: "Open Sans", sans-serif;
+  color: midnightblue;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.texto__footer--small {
+  font-size: 12px;
+}
+
+.texto__index {
+  font-weight: normal;
+  padding-bottom: 25px;
 }
 
 label, h5 {
@@ -73,36 +88,66 @@ label, h5 {
   color: white;
 }
 
-.Texto_Contacto {
-  color: white;
+h4 {
+  padding-top: 20px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+  size: 20px;
+  color: midnightblue;
+}
+
+/* Seccion Index */
+.galeria {
+  margin: 100px;
+}
+
+/* Seccion Nosotros */
+.Lista_Nosotros, .Lista_Servicios {
+  margin: 20px;
+  color: midnightblue;
+}
+
+.Item_Nosotros, .form-control, .custom-select {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Seccion Servicios */
+.Lista_Servicios {
+  border: 1px solid;
+  list-style-type: none;
+}
+
+.NuestroServicio {
+  background-image: url(/Fotos/Serv_1.jpg);
+  background-size: cover;
+}
+
+/* Seccion Contactos */
+.form-control, .custom-select {
+  padding: 0px;
 }
 
 .contacto__section {
   background: linear-gradient(90deg, #1c71b4 0%, #1e9f9b 100%);
 }
 
+/* Seccion Footer */
 footer {
+  background-color: #b4d2eb;
+  margin: 0 !important;
+}
+
+.footer__icons {
+  width: 30px;
+  padding: 5px;
+}
+
+body {
   width: 100%;
-}
-
-.FB {
-  color: mediumblue;
-}
-
-.TW {
-  color: dodgerblue;
-}
-
-.WP {
-  color: limegreen;
-}
-
-.FB, .TW, .WP {
-  font-size: 40px;
-}
-
-.FB:hover, .TW:hover, .WP:hover {
-  transform: scale(1.2, 1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
